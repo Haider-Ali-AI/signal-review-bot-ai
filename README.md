@@ -18,29 +18,4 @@ The system follows a decoupled architecture where the LLM is treated as a logic 
 
 ---
 
-## 2. Project: PSX Automated Trader
-**Suggested Repo Name:** `psx-trader-ml-engine`
-
-### **Description (The "About" section):**
-A machine learning pipeline and dashboard for the Pakistan Stock Exchange (PSX). Features a LightGBM model trained on 5 years of historical data for automated signal generation, visualized through a high-performance Streamlit interface.
-
-### **README.md Content:**
-```markdown
-# 📈 PSX Automated Trader
-
-A proprietary alpha-generation engine for the Pakistan Stock Exchange. This project integrates a full ML pipeline—from data ingestion to predictive modeling and automated notification.
-
-## 🚀 Core Features
-* **Predictive Engine:** LightGBM model optimized for short-term swing patterns (1-7 days).
-* **Automated Pipeline:** End-to-end flow from historical data ingestion to signal generation.
-* **Interactive Dashboard:** Streamlit-powered interface for real-time model inference and technical visualization.
-* **Feedback Loop:** Automated post-trade analysis to refine model accuracy over time.
-
-## 🛠️ Technical Stack
-* **ML Framework:** LightGBM, Scikit-learn.
-* **Data Processing:** Pandas, NumPy (Feature engineering on 5+ years of PSX data).
-* **Frontend:** Streamlit.
-* **Notifications:** WhatsApp API Integration for real-time signal delivery.
-
-## 🧠 Model Strategy
 The model utilizes a leaf-wise growth strategy to capture volatility in the PSX. Feature engineering focused on momentum indicators and volume-weighted price action to maximize the model's precision in "Buy" signal conviction.
